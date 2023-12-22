@@ -1,0 +1,10 @@
+-- Create table in the 'rba' database
+CREATE TABLE IF NOT EXISTS person (
+                                      oib VARCHAR(11) PRIMARY KEY,
+                                      name VARCHAR(255) NOT NULL,
+                                      surname VARCHAR(255) NOT NULL,
+                                      status int2(4) NOT NULL
+);
+
+-- Insert initial data if needed
+INSERT INTO person (oib, name, surname, status) VALUES ('1234567898', 'John', 'Doe', '1');
